@@ -1,12 +1,12 @@
 #### Prerequisites
-Node.js, Next.js
+Node.js, Docker or local Postgres database
 #### Setup your environment variables
+Add your environment variables. Use the "Copy env file" button above
 ```bash
 cp .env.example .env
-# Add your environment variables from the console. Use the "Copy env" button
 ```
 
-#### Startup your database
+#### Setup your database
 **Option 1:** You can run any database that is supported by [PrismaORM](https://www.prisma.io/)
 
 **Option 2:** Or you can install Postgres by using Docker. Make sure no other Postgres instance is running on the same machine.
