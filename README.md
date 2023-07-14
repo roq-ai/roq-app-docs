@@ -1,7 +1,7 @@
 #### Prerequisites
 Node.js, Npm, Docker or local Postgres database
 #### Setup your environment variables
-Add your environment variables. Use the "Copy env file" button above
+Create a `.env` file in the root directory of your repo, and copy over the environment variables below
 ```bash
 cp .env.example .env
 ```
