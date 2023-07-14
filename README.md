@@ -1,5 +1,5 @@
 #### Prerequisites
-Node.js, Docker or local Postgres database
+Node.js, Npm, Docker or local Postgres database
 #### Setup your environment variables
 Add your environment variables. Use the "Copy env file" button above
 ```bash
