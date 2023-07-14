@@ -1,61 +1,26 @@
-## Running locally
-
-### (0) Prerequisites
-
-Make sure these tools are installed and up-to-date:
-
-- Node
-- NPM (or Yarn)
-- Docker or local database
-
-### (1) Clone the repository
-
-### (2) Setup environment variables
-
-- Login to [ROQ Console](https://console.roq.tech) (opens in a new tab) and go to "Project Details"
-- In the environment named "Local Environment", click the "Copy Env File" button and copy the entire output.
-- Important: If your application is **not** running on `http://localhost:3000/`, change the URL in the environment's setting page before copying the output.
-- Create a new file called .env in the root of your project and paste the content in.
-
+#### Prerequisites
+Node.js, Next.js
+#### Setup your environment variables
 ```bash
 cp .env.example .env
+# Add your environment variables from the console. Use the "Copy env" button
 ```
 
-### (3) Install database
+#### Startup your database
+**Option 1:** You can run any database that is supported by [PrismaORM](https://www.prisma.io/)
 
-There are two options for installing a database:
-
-1. You can install any database yourself that is supported by [PrismaORM](https://www.prisma.io/)
-2. or you can install Postgres by using Docker. Make sure no other Postgres instance is running on the same machine.
-
+**Option 2:** Or you can install Postgres by using Docker. Make sure no other Postgres instance is running on the same machine.
 ```bash
 docker-compose up
 ```
-
-In any case, you need to add the configuration to your `.env` file:
-
+For both options, add the database connection string to your `.env` file:
 ```dotenv
-DATABASE_URL
+DATABASE_URL=postgres://yourusername:yourpassword@localhost:5432/yourdb
 ```
 
-### (4) Install dependencies and start the application
-
+#### Install dependencies and start up your app
 ```bash
-# With npm
-npm install
-npm run dev
+npm install #or yarn
+npm run dev #or yarn dev
 ```
-
-or
-
-```bash
-# With Yarn
-yarn
-yarn dev
-```
-
 Now you can open your app at [http://localhost:3000](http://localhost:3000).
-
-## Further documentation
-
-To learn more about ROQ UI components and APIs, take a look at [ROQ Documentation](https://docs.roq.tech)
