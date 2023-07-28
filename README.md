@@ -6,9 +6,10 @@ Create a `.env` file in the root directory of your repo, and copy over the envir
 cp .env.example .env
 ```
 
-#### Install dependencies and start up your app
+#### Install dependencies, run migrations, and start up your app
 ```bash
 npm install #or yarn
+npx prisma migrate dev # Run database migrations
 npm run dev #or yarn dev
 ```
 Now you can open your app at [http://localhost:3000](http://localhost:3000).
