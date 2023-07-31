@@ -9,7 +9,6 @@ cp .env.example .env
 #### Install dependencies, run migrations, and start up your app
 ```bash
 npm install #or yarn
-npx prisma migrate dev # Run database migrations
 npm run dev #or yarn dev
 ```
 Now you can open your app at [http://localhost:3000](http://localhost:3000).
