@@ -6,7 +6,7 @@ Create a `.env` file in the root directory of your repo, and copy over the envir
 cp .env.example .env
 ```
 
-#### Install dependencies, run migrations, and start up your app
+#### Install dependencies, and start up your app
 ```bash
 npm install #or yarn
 npm run dev #or yarn dev
