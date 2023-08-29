@@ -1,5 +1,7 @@
 #### Prerequisites
-Node.js, Npm, Docker or local Postgres database
+[Node.js](https://nodejs.org/) version 16.X and later <br />
+
+[NPM](https://docs.npmjs.com/about-npm-versions) version 8.X and later <br />
 #### Setup your environment variables
 Create a `.env` file in the root directory of your repo, and copy over the environment variables below
 ```bash
@@ -8,7 +10,6 @@ cp .env.example .env
 
 #### Install dependencies, and start up your app
 ```bash
-npm install #or yarn
+npm run dev #or yarn dev
 npm run dev #or yarn dev
 ```
-Now you can open your app at [http://localhost:3000](http://localhost:3000).
